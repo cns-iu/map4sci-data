@@ -1,0 +1,1 @@
+\COPY (SELECT id AS pmid, article_year, wosid FROM medline_article_date JOIN wosid_to_pmid ON medline_article_date.id = wosid_to_pmid.pmid::int) TO '~/map4sci-data/raw-data/med_id_to_wos_id.csv' WITH (FORMAT CSV);
