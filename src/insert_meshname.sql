@@ -4,5 +4,6 @@ CREATE TABLE paper_meshname(
     meshname varchar, 
     is_major_topic varchar
 )
+;
 
 \COPY paper_meshname FROM '~/map4sci-data/raw-data/paper_10000_meshname.csv' CSV HEADER; 
