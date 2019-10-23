@@ -1,0 +1,1 @@
+\COPY (SELECT medlinex_rascore_edges.pmid, medlinex_rascore_edges.pmid2, medlinex_rascore_edges.rascore, medlinex_rascore_edges.rank FROM medlinex_rascore_edges JOIN medline_master ON medlinex_rascore_edges.pmid = medline_master.pmid WHERE medline_master.pub_year = '2010') TO '/people/maahutch/pubmed_node_edge/edge_2010.csv' CSV HEADER;
